@@ -7,22 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E29EE7C29AA38AF00C2D89B /* fi_news_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E29EE7B29AA38AF00C2D89B /* fi_news_iosApp.swift */; };
+		2F8943CBCAED211790BEA78C /* Pods_fi_news_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 799862090181B141F4A18C02 /* Pods_fi_news_ios.framework */; };
+		3E29EE7C29AA38AF00C2D89B /* FiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E29EE7B29AA38AF00C2D89B /* FiApp.swift */; };
 		3E29EE7E29AA38AF00C2D89B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E29EE7D29AA38AF00C2D89B /* ContentView.swift */; };
 		3E29EE8029AA38B000C2D89B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E29EE7F29AA38B000C2D89B /* Assets.xcassets */; };
 		3E29EE8329AA38B000C2D89B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E29EE8229AA38B000C2D89B /* Preview Assets.xcassets */; };
+		3E8B0F3429AA7C3F0025D840 /* FlutterDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B0F3329AA7C3F0025D840 /* FlutterDependencies.swift */; };
+		3E8B0F3829AB6CCC0025D840 /* FlutterApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B0F3729AA989F0025D840 /* FlutterApi.swift */; };
+		3E8B0F5229B217820025D840 /* fi_news_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B0F5129B217820025D840 /* fi_news_iosUITests.swift */; };
+		3E8B0F5429B217820025D840 /* fi_news_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B0F5329B217820025D840 /* fi_news_iosUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3E8B0F5529B217820025D840 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E29EE7029AA38AF00C2D89B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E29EE7729AA38AF00C2D89B;
+			remoteInfo = "fi-news-ios";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		15731BA752667C1E3AFA8DBD /* Pods-fi-news-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fi-news-ios.debug.xcconfig"; path = "Target Support Files/Pods-fi-news-ios/Pods-fi-news-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		3E29EE7829AA38AF00C2D89B /* fi-news-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fi-news-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E29EE7B29AA38AF00C2D89B /* fi_news_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fi_news_iosApp.swift; sourceTree = "<group>"; };
+		3E29EE7B29AA38AF00C2D89B /* FiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiApp.swift; sourceTree = "<group>"; };
 		3E29EE7D29AA38AF00C2D89B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3E29EE7F29AA38B000C2D89B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E29EE8229AA38B000C2D89B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3E8B0F3229AA70B60025D840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3E8B0F3329AA7C3F0025D840 /* FlutterDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterDependencies.swift; sourceTree = "<group>"; };
+		3E8B0F3729AA989F0025D840 /* FlutterApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterApi.swift; sourceTree = "<group>"; };
+		3E8B0F4F29B217820025D840 /* fi-news-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fi-news-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E8B0F5129B217820025D840 /* fi_news_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fi_news_iosUITests.swift; sourceTree = "<group>"; };
+		3E8B0F5329B217820025D840 /* fi_news_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fi_news_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		799862090181B141F4A18C02 /* Pods_fi_news_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fi_news_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C90C6CAE9396E68DE6413F /* Pods-fi-news-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fi-news-ios.release.xcconfig"; path = "Target Support Files/Pods-fi-news-ios/Pods-fi-news-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3E29EE7529AA38AF00C2D89B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F8943CBCAED211790BEA78C /* Pods_fi_news_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E8B0F4C29B217820025D840 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,11 +64,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39AD0213F823910108A4BB14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15731BA752667C1E3AFA8DBD /* Pods-fi-news-ios.debug.xcconfig */,
+				84C90C6CAE9396E68DE6413F /* Pods-fi-news-ios.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3E29EE6F29AA38AF00C2D89B = {
 			isa = PBXGroup;
 			children = (
 				3E29EE7A29AA38AF00C2D89B /* fi-news-ios */,
+				3E8B0F5029B217820025D840 /* fi-news-iosUITests */,
 				3E29EE7929AA38AF00C2D89B /* Products */,
+				39AD0213F823910108A4BB14 /* Pods */,
+				AE35D29386C265D6E5CC92F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -44,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				3E29EE7829AA38AF00C2D89B /* fi-news-ios.app */,
+				3E8B0F4F29B217820025D840 /* fi-news-iosUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,10 +96,13 @@
 		3E29EE7A29AA38AF00C2D89B /* fi-news-ios */ = {
 			isa = PBXGroup;
 			children = (
-				3E29EE7B29AA38AF00C2D89B /* fi_news_iosApp.swift */,
+				3E8B0F3729AA989F0025D840 /* FlutterApi.swift */,
+				3E8B0F3229AA70B60025D840 /* Info.plist */,
+				3E29EE7B29AA38AF00C2D89B /* FiApp.swift */,
 				3E29EE7D29AA38AF00C2D89B /* ContentView.swift */,
 				3E29EE7F29AA38B000C2D89B /* Assets.xcassets */,
 				3E29EE8129AA38B000C2D89B /* Preview Content */,
+				3E8B0F3329AA7C3F0025D840 /* FlutterDependencies.swift */,
 			);
 			path = "fi-news-ios";
 			sourceTree = "<group>";
@@ -67,6 +115,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3E8B0F5029B217820025D840 /* fi-news-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3E8B0F5129B217820025D840 /* fi_news_iosUITests.swift */,
+				3E8B0F5329B217820025D840 /* fi_news_iosUITestsLaunchTests.swift */,
+			);
+			path = "fi-news-iosUITests";
+			sourceTree = "<group>";
+		};
+		AE35D29386C265D6E5CC92F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				799862090181B141F4A18C02 /* Pods_fi_news_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E29EE8629AA38B000C2D89B /* Build configuration list for PBXNativeTarget "fi-news-ios" */;
 			buildPhases = (
+				E9BD6F4C30208F3E89CB57BB /* [CP] Check Pods Manifest.lock */,
+				6A2314F0B6F53258FBF6AAC7 /* [CP-User] Run Flutter Build finews_api Script */,
 				3E29EE7429AA38AF00C2D89B /* Sources */,
 				3E29EE7529AA38AF00C2D89B /* Frameworks */,
 				3E29EE7629AA38AF00C2D89B /* Resources */,
+				0C62CD0A814A920B09E3CB4D /* [CP-User] Embed Flutter Build finews_api Script */,
 			);
 			buildRules = (
 			);
@@ -87,6 +155,24 @@
 			productReference = 3E29EE7829AA38AF00C2D89B /* fi-news-ios.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3E8B0F4E29B217820025D840 /* fi-news-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E8B0F5729B217820025D840 /* Build configuration list for PBXNativeTarget "fi-news-iosUITests" */;
+			buildPhases = (
+				3E8B0F4B29B217820025D840 /* Sources */,
+				3E8B0F4C29B217820025D840 /* Frameworks */,
+				3E8B0F4D29B217820025D840 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E8B0F5629B217820025D840 /* PBXTargetDependency */,
+			);
+			name = "fi-news-iosUITests";
+			productName = "fi-news-iosUITests";
+			productReference = 3E8B0F4F29B217820025D840 /* fi-news-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -94,11 +180,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					3E29EE7729AA38AF00C2D89B = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					3E8B0F4E29B217820025D840 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 3E29EE7729AA38AF00C2D89B;
 					};
 				};
 			};
@@ -116,6 +206,7 @@
 			projectRoot = "";
 			targets = (
 				3E29EE7729AA38AF00C2D89B /* fi-news-ios */,
+				3E8B0F4E29B217820025D840 /* fi-news-iosUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,7 +221,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3E8B0F4D29B217820025D840 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C62CD0A814A920B09E3CB4D /* [CP-User] Embed Flutter Build finews_api Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Embed Flutter Build finews_api Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../fi-news-flutter/finews_api/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
+		};
+		6A2314F0B6F53258FBF6AAC7 /* [CP-User] Run Flutter Build finews_api Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Run Flutter Build finews_api Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../fi-news-flutter/finews_api/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
+		E9BD6F4C30208F3E89CB57BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fi-news-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3E29EE7429AA38AF00C2D89B /* Sources */ = {
@@ -138,11 +281,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E29EE7E29AA38AF00C2D89B /* ContentView.swift in Sources */,
-				3E29EE7C29AA38AF00C2D89B /* fi_news_iosApp.swift in Sources */,
+				3E8B0F3429AA7C3F0025D840 /* FlutterDependencies.swift in Sources */,
+				3E29EE7C29AA38AF00C2D89B /* FiApp.swift in Sources */,
+				3E8B0F3829AB6CCC0025D840 /* FlutterApi.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E8B0F4B29B217820025D840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E8B0F5429B217820025D840 /* fi_news_iosUITestsLaunchTests.swift in Sources */,
+				3E8B0F5229B217820025D840 /* fi_news_iosUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E8B0F5629B217820025D840 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E29EE7729AA38AF00C2D89B /* fi-news-ios */;
+			targetProxy = 3E8B0F5529B217820025D840 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3E29EE8429AA38B000C2D89B /* Debug */ = {
@@ -261,6 +423,7 @@
 		};
 		3E29EE8729AA38B000C2D89B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15731BA752667C1E3AFA8DBD /* Pods-fi-news-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -270,6 +433,7 @@
 				DEVELOPMENT_TEAM = DS2938Q34G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "fi-news-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -290,6 +454,7 @@
 		};
 		3E29EE8829AA38B000C2D89B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84C90C6CAE9396E68DE6413F /* Pods-fi-news-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,6 +464,7 @@
 				DEVELOPMENT_TEAM = DS2938Q34G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "fi-news-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -314,6 +480,42 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3E8B0F5829B217820025D840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DS2938Q34G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.fi-news-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "fi-news-ios";
+			};
+			name = Debug;
+		};
+		3E8B0F5929B217820025D840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DS2938Q34G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.fi-news-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "fi-news-ios";
 			};
 			name = Release;
 		};
@@ -334,6 +536,15 @@
 			buildConfigurations = (
 				3E29EE8729AA38B000C2D89B /* Debug */,
 				3E29EE8829AA38B000C2D89B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E8B0F5729B217820025D840 /* Build configuration list for PBXNativeTarget "fi-news-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E8B0F5829B217820025D840 /* Debug */,
+				3E8B0F5929B217820025D840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
