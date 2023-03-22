@@ -9,10 +9,9 @@ import SwiftUI
 
 @main
 struct FiApp: App {
-    @StateObject var flutterDependencies = FlutterDependencies()
         var body: some Scene {
           WindowGroup {
-            ContentView().environmentObject(flutterDependencies)
+            ContentView()
           }
         }
 }

@@ -21,19 +21,19 @@ final class fi_news_iosUITests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
+    
+    
     func testExample() throws {
         let app = XCUIApplication()
-        app.launch()
-
-        // press Flutter button
-        app.buttons.firstMatch.tap()
+        measure(metrics: [XCTOSSignpostMetric(subsystem: "test.fi-news-ios", category: "PointsOfInterest", name: "native"), XCTOSSignpostMetric(subsystem: "test.fi-news-ios", category: "PointsOfInterest", name: "flutter"), XCTCPUMetric(), XCTMemoryMetric()]) {
+            app.launch()
+            
+            // press Flutter button
+            app.buttons.firstMatch.tap()
+            
         
-        // wait for API call to finish
-        XCTAssertTrue(app.staticTexts["loading..."].waitForNonExistence(timeout: 60))
-        
-    
-        
+            XCTAssertTrue(app.staticTexts["finished"].waitForExistence(timeout: 60))
+        }
         //app.buttons.staticTexts["Show Flutter!"].firstMatch.tap()
     }
 
@@ -44,26 +44,5 @@ final class fi_news_iosUITests: XCTestCase {
                 XCUIApplication().launch()
             }
         }
-    }
-}
-
-// https://stackoverflow.com/questions/37447084/wait-until-object-is-not-visible-on-the-screen-using-swift-and-xctest
-extension XCUIElement {
-
-    /**
-     * Waits the specified amount of time for the element’s `exists` property to become `false`.
-     *
-     * - Parameter timeout: The amount of time to wait.
-     * - Returns: `false` if the timeout expires without the element coming out of existence.
-     */
-    func waitForNonExistence(timeout: TimeInterval) -> Bool {
-    
-        let timeStart = Date().timeIntervalSince1970
-    
-        while (Date().timeIntervalSince1970 <= (timeStart + timeout)) {
-            if !exists { return true }
-        }
-    
-        return false
     }
 }

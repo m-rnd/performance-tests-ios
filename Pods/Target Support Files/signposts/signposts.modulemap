@@ -1,0 +1,6 @@
+framework module signposts {
+  umbrella header "signposts-umbrella.h"
+
+  export *
+  module * { export * }
+}

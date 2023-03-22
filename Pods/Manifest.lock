@@ -1,22 +1,35 @@
 PODS:
+  - Alamofire (5.6.4)
   - Flutter (1.0.0)
   - FlutterPluginRegistrant (0.0.1):
     - Flutter
+  - signposts (0.0.1):
+    - Flutter
 
 DEPENDENCIES:
+  - Alamofire (~> 5.0)
   - Flutter (from `../fi-news-flutter/finews_api/.ios/Flutter`)
   - FlutterPluginRegistrant (from `../fi-news-flutter/finews_api/.ios/Flutter/FlutterPluginRegistrant`)
+  - signposts (from `../fi-news-flutter/finews_api/.ios/.symlinks/plugins/signposts/ios`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
 
 EXTERNAL SOURCES:
   Flutter:
     :path: "../fi-news-flutter/finews_api/.ios/Flutter"
   FlutterPluginRegistrant:
     :path: "../fi-news-flutter/finews_api/.ios/Flutter/FlutterPluginRegistrant"
+  signposts:
+    :path: "../fi-news-flutter/finews_api/.ios/.symlinks/plugins/signposts/ios"
 
 SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
   FlutterPluginRegistrant: 58acfb6cb31ee4ca14f920aba101815efda113ee
+  signposts: 6aef65cd4a96ad0717de4c5ac793d1db9d5fbc82
 
-PODFILE CHECKSUM: 651803ec10fcd352c0b8215a3f170ab47e305010
+PODFILE CHECKSUM: 14342c663d7bc423075905f852f63e1f6f49ef62
 
 COCOAPODS: 1.11.3

@@ -5,6 +5,10 @@ flutter_application_path = '../fi-news-flutter/finews_api/'
 load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
 
 target 'fi-news-ios' do
+  
+  pod 'Alamofire', '~> 5.0'
+  
+  
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 

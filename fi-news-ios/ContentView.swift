@@ -6,57 +6,30 @@
 //
 
 import SwiftUI
-import Flutter
-import os.signpost
 
 
 struct ContentView: View {
-  // Flutter dependencies are passed in an EnvironmentObject.
-  @EnvironmentObject var flutterDependencies: FlutterDependencies
-
     @State private var isLoading = false
-
-
-  // Button is created to call the showFlutter function when pressed.
-  var body: some View {
-      VStack {
-          Button("Show Flutter!") {
-            showFlutter()
-          }
-          if (isLoading) { Text("loading...") }
-      }
-  }
-
-func showFlutter() {
     
-    let log = OSLog(
-        subsystem: "test.fi-news-ios",
-        category: "PointsOfInterest"
-    )
-    let signpostID = OSSignpostID(log: log)
+    var body: some View {
+        VStack {
+            Button("Download") {
+                callApi()
+            }
+            if (isLoading) {
+                Text("loading...")
+            } else {
+                Text("finished")
+            }
+        }
+    }
     
-    
-    let api = FlutterNewsApi(binaryMessenger: flutterDependencies.flutterEngine.binaryMessenger)
-    isLoading = true
-    NSLog ("loading started")
-    os_signpost(
-        .begin,
-        log: log,
-        name: "Call Flutter API",
-        signpostID: signpostID
-    )
-    api.getNews(completion: {(data) in
-        // print(data)
-        isLoading = false
-        NSLog ("loading ended")
-        os_signpost(
-            .end,
-            log: log,
-            name: "Call Flutter API",
-            signpostID: signpostID
-        )
-    })
-  }
+    func callApi() {
+        isLoading = true
+        NewsRepository().callApi(flutter: true) { data in
+            isLoading = false
+        }
+    }
 }
 
 
