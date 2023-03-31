@@ -18,11 +18,15 @@ struct AlamofireClient {
     
     func callApi(resultHandler: @escaping ([NewsEntry]) -> Void) {
         signposter.beginInterval("AlamofireClient.callApi")
-        AF.request("http://192.168.178.39:3001/news", encoding: JSONEncoding.default).responseDecodable(of: [ApiNewsEntry].self) { response in
+        AF.request("http://10.102.17.45:3001/news", encoding: JSONEncoding.default).responseDecodable(of: [ApiNewsEntry].self) { response in
             signposter.endInterval("AlamofireClient.callApi")
             
+            signposter.beginInterval("AlamofireClient.getResponseValue")
+            let res = response.value
+            signposter.endInterval("AlamofireClient.getResponseValue")
+            
             signposter.beginInterval("AlamofireClient.mapEntities")
-            let res = response.value?.compactMap { entity in
+            let entries = res?.compactMap { entity in
                 // Mapping der Entities, wenn ein Titel vorhanden ist
                 if let title = entity.title {
                     return NewsEntry(title: title)
@@ -30,7 +34,7 @@ struct AlamofireClient {
                 return nil
             }
             signposter.endInterval("AlamofireClient.mapEntities")
-            resultHandler(res ?? [])
+            resultHandler(entries ?? [])
         }
     }
 }

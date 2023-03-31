@@ -23,18 +23,32 @@ final class fi_news_iosUITests: XCTestCase {
     }
     
     
-    func testExample() throws {
+    func testDownloadRepeatedly() throws {
         let app = XCUIApplication()
-        measure(metrics: [XCTOSSignpostMetric(subsystem: "test.fi-news-ios", category: "PointsOfInterest", name: "native"), XCTOSSignpostMetric(subsystem: "test.fi-news-ios", category: "PointsOfInterest", name: "flutter"), XCTCPUMetric(), XCTMemoryMetric()]) {
-            app.launch()
-            
-            // press Flutter button
+        app.launch()
+        for _ in 0...9 {
             app.buttons.firstMatch.tap()
-            
-        
+            XCTAssertTrue(app.staticTexts["finished"].waitForExistence(timeout: 60))
+    
+        }
+    }
+    
+    
+    func testDownload() throws {
+        let app = XCUIApplication()
+        measure(metrics: [
+            XCTOSSignpostMetric(subsystem: "test.fi-news-ios", category: "PointsOfInterest", name: "AlamofireClient.callApi"),
+            XCTOSSignpostMetric(subsystem: "test.fi-news-ios", category: "PointsOfInterest", name: "AlamofireClient.mapEntities"),
+            XCTOSSignpostMetric(subsystem: "test.fi-news-ios", category: "PointsOfInterest", name: "flutter init"),
+            XCTOSSignpostMetric(subsystem: "test.fi-news-ios", category: "PointsOfInterest", name: "register"),
+            XCTOSSignpostMetric(subsystem: "test.fi-news-ios", category: "PointsOfInterest", name: "FlutterDependencies.callApi"),
+            XCTOSSignpostMetric(subsystem: "test.fi-news-ios", category: "PointsOfInterest", name: "FlutterDependencies.mapEntities"),
+            XCTOSSignpostMetric(subsystem: "test.fi-news-ios", category: "PointsOfInterest", name: "flutter"),
+        ]) {
+            app.launch()
+            app.buttons.firstMatch.tap()
             XCTAssertTrue(app.staticTexts["finished"].waitForExistence(timeout: 60))
         }
-        //app.buttons.staticTexts["Show Flutter!"].firstMatch.tap()
     }
 
     func testLaunchPerformance() throws {
